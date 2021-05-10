@@ -19,106 +19,207 @@
     ></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <!-- <div class="social-icons">
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-github-square"></i>
+    <nav class="navbar">
+      <ul id="myMenu" class="navbar-links">
+        <li data-menuanchor="firstPage" class="navbar-link">
+          <a href="#homePage">Home</a>
+        </li>
+        <li data-menuanchor="secondPage" class="navbar-link">
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li data-menuanchor="thirdPage" class="navbar-link">
+          <a href="#workPage">Work and Education</a>
+        </li>
+        <li data-menuanchor="fourthPage" class="navbar-link">
+          <a href="#skillsPage">My Skills</a>
+        </li>
+        <li data-menuanchor="fifthPage" class="navbar-link">
+          <a href="#projectsPage">My Projects</a>
+        </li>
+        <li data-menuanchor="sixthPage" class="navbar-link">
+          <a href="#testimonialPage">Testimonials</a>
+        </li>
+        <li data-menuanchor="seventhPage" class="navbar-link">
+          <a href="#contactPage">Contact Me</a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">+</button>
+    </nav>
+    <div class="social-icons">
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-github"></i>
       <i class="fab fa-codepen"></i>
-    </div> -->
+    </div>
     <div id="fullpage">
       <!-- Landing Page -->
       <div class="section">
-        <div id="homePage" class="content">
-          <h1>Jeandre Awood</h1>
-          <div id="changeText">Aspiring Frontend Developer</div>
-          <div>
-            <nav class="Navbar">
-              <ul class="navbar-links">
-                <li class="navbar-link">
-                  <a href="#homePage" class="navbar-anchor">Home</a>
-                </li>
-                <li class="navbar-link">
-                  <a href="#aboutMe" class="navbar-anchor">About Me</a>
-                </li>
-                <li class="navbar-link">
-                  <a href="#workPage" class="navbar-anchor"
-                    >Work and Education</a
-                  >
-                </li>
-                <li class="navbar-link">
-                  <a href="#skillsPage" class="navbar-anchor">Skills</a>
-                </li>
-                <li class="navbar-link">
-                  <a href="#projectsPage" class="navbar-anchor">My Projects</a>
-                </li>
-                <li class="navbar-link">
-                  <a href="#testimonialPage" class="navbar-anchor"
-                    >Testimonials</a
-                  >
-                </li>
-                <li class="navbar-link">
-                  <a href="#contactPage" class="navbar-anchor">Contact Me</a>
-                </li>
-              </ul>
-              <button class="navbar-button" onclick="toggleNavbar()">+</button>
-            </nav>
-          </div>
+        <div id="home-container" class="content">
+          <header>
+            <div class="container">
+              <div class="about-img">
+                <img src="./Images/Jeandre Awood No Background.png" alt="" />
+              </div>
+              <h1>Jeandre Awood</h1>
+              <div id="changeText">Aspiring Frontend Developer</div>
+            </div>
+          </header>
         </div>
       </div>
       <!-- About Me -->
       <div class="section">
-        <div id="aboutMe" class="content">
+        <div class="slide" data-anchor="slide1">
           <h1>About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            architecto fugiat ab adipisci ad atque reiciendis quae fugit eum
-            quasi animi, quod sed, voluptatibus cum alias quaerat ratione dolore
-            natus.
-          </p>
+        </div>
+        <div class="slide" data-anchor="slide2">
+          <blockquote>
+            <p>
+              <strong>Did You Know:</strong> I am an extremely motivated
+              individual who is constantly looking to develop my skills and grow
+              professionally. I am confident in my ability to come up with
+              interesting ideas to make the impossible possible. I am
+              goal-driven, self-disciplined, and a fast learner that thrives
+              under pressure. I have excellent communication skills which are
+              executed in a professional and friendly manner which were further
+              developed through the completion of my undergraduate and
+              postgraduate degrees in psychology.
+            </p>
+          </blockquote>
+        </div>
+        <div class="slide" data-anchor="slide3">
+          <blockquote>
+            <p>
+              <strong>Did You Know:</strong> My passion for technology started
+              at a young age when I was given my first console - the PlayStation
+              1. This was a catalyst for merging myself into the tech industry
+              because I always wanted to keep up to date with the latest
+              cellphone and gaming consoles that were being released. I also
+              used to do IT in primary school and this further intensified my
+              passion for the tech industry given how quickly it grasped my
+              attention and played on my need and want to learn about anything
+              and everything technology-based.
+            </p>
+          </blockquote>
+        </div>
+        <div class="slide" data-anchor="slide4">
+          <blockquote>
+            <p>
+              <strong>Did You Know:</strong> The HTML for this page was created
+              to be semantic, accessible, and free of nearly all other opinions.
+              Nested sectioning elements with the class `.container` serve as
+              additional style aids since you do not have access to alter the
+              base HTML. IDs are included where needed for nav anchors or
+              accessibility, and a small number of additional classes are
+              provided for key elements without IDs. Don't forget the
+              `.skip-link`!
+            </p>
+          </blockquote>
         </div>
       </div>
       <!-- Work and Education -->
       <div class="section">
-        <div id="workPage" class="content">
+        <div id="work-container" class="content">
           <h1>Work and Education</h1>
         </div>
       </div>
       <!-- Skills Page -->
       <div class="section">
-        <div id="skillsPage" class="content">
+        <div id="skills-container" class="content">
           <h1>My Skills</h1>
         </div>
       </div>
       <!-- Projects -->
       <div class="section">
-        <div id="projectsPage" class="content">
+        <div id="projects-container" class="content">
           <h1>My Projects</h1>
         </div>
       </div>
       <!-- Testimonials -->
       <div class="section">
-        <div id="testimonialPage" class="content">
+        <div id="testimonial-container" class="content">
           <h1>Testimonials</h1>
         </div>
       </div>
       <!-- Contact Page -->
       <div class="section">
-        <div id="contactPage" class="content">
-          <form action="https://formspree.io/f/xleagqab" method="POST">
-            <label>
-              Your email:
-              <input type="email" name="_replyto" />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-
-            <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
-          </form>
+        <div id="contact-container" class="content">
+          <h1>Contact Me</h1>
+          <div class="contact-details">
+            <h3>Contact Details</h3>
+            <h5>Cellphone Number</h5>
+            <p>Cellphone: 063 192 2598</p>
+            <p>Whatsapp: 083 585 1644</p>
+            <h5>Email Address</h5>
+            <p>jeandreross@gmail.com</p>
+            <h5>Physical Address</h5>
+            <p>Grassy Park, Cape Town, 7941</p>
+          </div>
+            <form
+              id="form-container"
+              action="https://formspree.io/f/xleagqab"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name" class="header" class="form-label"
+                  >Your Name:</label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  required
+                  placeholder="Full Name"
+                  name="name"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="header" class="form-label"
+                  >Your Email:</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="example@mail.com"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact" class="header" class="form-label"
+                  >Your Number:</label
+                >
+                <input
+                  id="contact"
+                  type="tel"
+                  name="contact"
+                  required
+                  placeholder="083 555 6789"
+                  class="form-input"
+                  min="10"
+                  max="10"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="header" class="form-label"
+                  >Your Message:</label
+                >
+                <textarea
+                  class="form-input"
+                  name="message"
+                  id="name"
+                  required
+                  placeholder="Type your message here..."
+                ></textarea>
+              </div>
+  
+              <!-- your other form fields go here -->
+  
+              <button type="submit" class="button">Send</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

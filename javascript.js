@@ -1,135 +1,107 @@
 // Initialize fullpage Fullpage
 new fullpage("#fullpage", {
-    anchors: ["homePage", "aboutMe", "workPage", "skillsPage", "projectsPage", "testimonialPage", "contactPage"],
-    navigation: true,
-    navigationPosition: "right",
-    navigationTooltips: ["Home", "About Me", "Work and Education", "Skills", "Projects", "Testimonials", "Contact"],
-    center: true,
-  }); 
+  anchors: [
+    "homePage",
+    "aboutMe",
+    "workPage",
+    "skillsPage",
+    "projectsPage",
+    "testimonialPage",
+    "contactPage",
+  ],
+  navigation: true,
+  navigationPosition: "right",
+  navigationTooltips: [
+    "Home",
+    "About Me",
+    "Work and Education",
+    "Skills",
+    "Projects",
+    "Testimonials",
+    "Contact",
+  ],
+  menu: "#myMenu",
+  afterLoad: function () {
+    setInterval(fullpage_api.moveSlideRight(), 1000);
+  },
+});
 
-  function toggleNavbar() {
-    document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
-  }
+// setInterval(fullpage_api.moveSlideRight(), 100);
 
-  // TypeWriter Effect
-  var container = document.getElementById('changeText');
+// $(document).ready(function () {
+//     $('#fullpage').fullpage({
+//         sectionsColor: ['#1bbc9b', '#4BBFC3'],
+//         loopBottom: true,
+//         afterRender: function () {
+//             setInterval(function () {
+//                 $.fn.fullpage.moveSlideRight();
+//             }, 1000);
+//         }
+//     });
+// });
 
-var things = ['Passion for UI/UX Design', 'Gamer', 'Sports Fanatic'];
-var t = -1;
-var thing = '';
-var message = container.innerHTML;
-var mode = 'write';
-var delay = 1500;
-
-function updateText(txt) {
-    container.innerHTML = txt;
+// NavBar
+function toggleNavbar() {
+  document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
 }
 
-function tick() {
+// TypeWriter Effect
+var container = document.getElementById("changeText");
 
-    if(container.innerHTML.length == 0) {
-        t++;
-        thing = things[t];
-        message = '';
-        mode = 'write';
-    }
-
-    switch(mode) {
-        case 'write' :
-            message += thing.slice(0, 1);
-            thing = thing.substr(1);
-
-            updateText(message);
-
-            if(thing.length === 0 && t === (things.length - 1)) {
-            	window.clearTimeout(timeout);
-            	return;
-            }
-
-            if(thing.length == 0){
-                mode = 'delete';
-                delay = 1500;
-            } else {
-                delay = 32 + Math.round(Math.random() * 40);
-            }
-
-            break;
-
-        case 'delete' :
-            message = message.slice(0, -1);
-            updateText(message);
-
-            if(message.length == 0)
-            {
-                mode = 'write';
-                delay = 1500;
-            } else {
-                delay = 32 + Math.round(Math.random() * 100);
-            }
-            break;
-    }
-
-    timeout = window.setTimeout(tick, delay);
-}
-
-var timeout = window.setTimeout(tick, delay);var container = document.getElementById('changeText');
-
-var things = ['I write code on the Internet...', 'The web is my passion, and I want to make a difference', 'Is this how you add text lol'];
+var things = ["Passion for UI/UX Design", "Gamer", "Sports Fanatic"];
 var t = -1;
-var thing = '';
+var thing = "";
 var message = container.innerHTML;
-var mode = 'write';
+var mode = "write";
 var delay = 1000;
 
 function updateText(txt) {
-    container.innerHTML = txt;
+  container.innerHTML = txt;
 }
 
 function tick() {
+  if (container.innerHTML.length == 0) {
+    t++;
+    thing = things[t];
+    message = "";
+    mode = "write";
+  }
 
-    if(container.innerHTML.length == 0) {
-        t++;
-        thing = things[t];
-        message = '';
-        mode = 'write';
-    }
+  switch (mode) {
+    case "write":
+      message += thing.slice(0, 1);
+      thing = thing.substr(1);
 
-    switch(mode) {
-        case 'write' :
-            message += thing.slice(0, 1);
-            thing = thing.substr(1);
+      updateText(message);
 
-            updateText(message);
+      if (thing.length === 0 && t === things.length - 1) {
+        window.clearTimeout(timeout);
+        return;
+      }
 
-            if(thing.length === 0 && t === (things.length - 1)) {
-            	window.clearTimeout(timeout);
-            	return;
-            }
+      if (thing.length == 0) {
+        mode = "delete";
+        delay = 1500;
+      } else {
+        delay = 32 + Math.round(Math.random() * 40);
+      }
 
-            if(thing.length == 0){
-                mode = 'delete';
-                delay = 1500;
-            } else {
-                delay = 32 + Math.round(Math.random() * 40);
-            }
+      break;
 
-            break;
+    case "delete":
+      message = message.slice(0, -1);
+      updateText(message);
 
-        case 'delete' :
-            message = message.slice(0, -1);
-            updateText(message);
+      if (message.length == 0) {
+        mode = "write";
+        delay = 1500;
+      } else {
+        delay = 32 + Math.round(Math.random() * 100);
+      }
+      break;
+  }
 
-            if(message.length == 0)
-            {
-                mode = 'write';
-                delay = 1500;
-            } else {
-                delay = 32 + Math.round(Math.random() * 100);
-            }
-            break;
-    }
-
-    timeout = window.setTimeout(tick, delay);
+  timeout = window.setTimeout(tick, delay);
 }
 
 var timeout = window.setTimeout(tick, delay);
