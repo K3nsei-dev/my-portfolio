@@ -1036,22 +1036,36 @@ svg {
 }
 
 polygon.eyes {
-  fill: #e63838;
+  fill: yellow;
 }
 
 polygon,
 path {
-  fill: white;
+  fill: black;
 }
 
 @media screen and (max-width: 440px) {
   .wrapper {
     display: none;
   }
+
+  .card {
+    width:100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
     display: none;
+  }
+
+  .card {
+    width:100%
+  }
+}
+
+@media screen and (max-width: 1032px) {
+  .card {
+    width: 100%;
   }
 }
