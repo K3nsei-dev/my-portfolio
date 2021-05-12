@@ -253,85 +253,61 @@
       <!-- Work and Education -->
       <div class="section work-and-education">
         <h1>Work & Education</h1>
-        <div class="slide" data-anchor="slide4">
-          <div class="content">
-            <blockquote>
-              <p>
-                <strong>Education</strong>
-                Matriculated from Bergvliet High School with a National Senior
-                Certificate (2016)
-              </p>
-            </blockquote>
-          </div>
+        <div class="button-container">
+          <button onclick="showTab('work-cards')">Work</button>
+          <button onclick="showTab('education-cards')">Education</button>
         </div>
-        <div class="slide" data-anchor="slide5">
-          <div class="content">
-            <blockquote>
+        <div class="cards-container-about">
+          <div id="education-cards" class="cards-content active">
+            <h2>Education</h2>
+            <div class="cards">
               <p>
-                <strong>Education</strong> Graduated from The South African
-                College of Applied PsychologyBachelor of Applied Social Science
-                Majoring in Counselling and Psychology (2019)
+                <b>Life Choices Coding Academy (2021):</b> Fullstack Developer
+                Course
               </p>
-            </blockquote>
+            </div>
+            <div class="cards">
+              <p>
+                <b>The South African College of Applied Psychology (2020):</b>
+                Bachelor of Social Science Honours in Psychology
+              </p>
+            </div>
+            <div class="cards">
+              <p>
+                <b>The South African College of Applied Psychology (2019):</b>
+                Bachelor of Applied Social Science Majoring in Counselling and
+                Psychology
+              </p>
+            </div>
+            <div class="cards">
+              <p>
+                <b>Bergvliet High School (2016):</b> National Senior Certificate
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="slide" data-anchor="slide6">
-          <div class="content">
-            <blockquote>
+          <div id="work-cards" class="cards-content">
+            <h2>Work Experience</h2>
+            <div class="cards">
               <p>
-                <strong>Education</strong> Graduated from The South African
-                College of Applied Psychology with a Bachelor of Social Science
-                Honours in Psychology (2020)
+                <b>NextPathology(Dec 2020 - Jan 2021):</b> Administrative
+                Assistant
               </p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide7">
-          <div class="content">
-            <blockquote>
+            </div>
+            <div class="cards">
               <p>
-                <strong>Education</strong> Enrolled at Life Choices Academy for
-                a Fullstack Developer Coding Course (In Progress)
+                <b>Bergvliet High School (Sep 2019 - Nov 2019):</b> Intern
+                Counsellor
               </p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide8">
-          <div class="content">
-            <blockquote>
+            </div>
+            <div class="cards">
               <p>
-                <strong>Work Experience</strong> Administrative Assistant at SDD
-                Properties (2018-2018). Duties included: Answering Phone calls,
-                filing confidential paperwork related to individuals salaries,
-                organising the filing, and ordering and taking stock of office
-                supplies.
+                <b>SDD Properties (Jan 2018 - Dec 2018):</b> Administrative
+                Assistant
               </p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide9">
-          <div class="content">
-            <blockquote>
-              <p>
-                <strong>Work Experience</strong> Intern Counsellor at Bergvliet
-                High School (2019-2019). Duties included: working with a
-                multidisciniplinary team consisting of Two Social Workers and an
-                Educational Psychologist, counselling students, report writing,
-                and filing confidential paperwork.
-              </p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide10">
-          <div class="content">
-            <blockquote>
-              <p>
-                <strong>Work Experience</strong> Administrative Assistant at
-                NextPathology (2020-2021). Duties included: Data Capturing,
-                processing payments, and relaying information about the various
-                tests provided.
-              </p>
-            </blockquote>
+            </div>
+            <div class="cards">
+              <p><b>Fair House Home School (Jan 2017 - Dec 2017):</b> Tutor</p>
+            </div>
           </div>
         </div>
       </div>
@@ -341,27 +317,26 @@
           <h1>My Skills</h1>
           <div class="box-container">
             <div class="box box1">
-            <h3 class="oddboxinner"> HTML
-            </h3>
-            <div class="card-icon">
-              <i class="fab fa-html5"></i>
-            </div>
+              <h3 class="oddboxinner">HTML</h3>
+              <div class="card-icon">
+                <i class="fab fa-html5"></i>
+              </div>
               <p>Beginner</p>
-          </div>
-          <div class="box box2">
-            <h3 class="evenboxinner"> CSS</h3>
-            <div class="card-icon">
-              <i class="fab fa-css3-alt"></i>
             </div>
-            <p>Beginner</p>
-          </div>
-          <div class="box box3">
-            <h3 class="oddboxinner">Python</h3>
-            <div class="card-icon">
-              <i class="fab fa-python"></i>
+            <div class="box box2">
+              <h3 class="evenboxinner">CSS</h3>
+              <div class="card-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <p>Beginner</p>
             </div>
-            <p>Beginner</p>
-          </div>
+            <div class="box box3">
+              <h3 class="oddboxinner">Python</h3>
+              <div class="card-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <p>Beginner</p>
+            </div>
           </div>
         </div>
       </div>
@@ -370,63 +345,140 @@
         <div id="projects-container" class="content">
           <h1>My Projects</h1>
           <article class="comic">
+            <!-- project 1 -->
             <div class="panel">
               <p class="text top-left">HTML/CSS</p>
               <div class="text bottom-right">
-                <a class="project-btn btn-1" href="https://github.com/K3nsei-dev/contact-form" target="_blank">GITHUB</a>
-                <a class="project-btn btn-1" href="https://lca-contact-form.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/contact-form"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://lca-contact-form.netlify.app/"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 2 -->
             <div class="panel">
               <p class="text top-left">HTML/CSS</p>
               <div class="text bottom-right">
-                <a class="project-btn btn-1" href="https://github.com/K3nsei-dev/timeline" target="_blank">GITHUB</a>
-                <a class="project-btn btn-1" href="https://lca-timeline.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/timeline"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://lca-timeline.netlify.app/"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 3 -->
             <div class="panel">
               <p class="speech">HTML/CSS</p>
               <div class="speech">
-                <a class="project-btn btn1" href="https://github.com/K3nsei-dev/my-project-cards" target="_blank">GITHUB</a>
-                <a class="project-btn btn1" href="https://lca-projects.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/my-project-cards"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://lca-projects.netlify.app/"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 4 -->
             <div class="panel">
               <p class="text top-left">HTML/CSS</p>
               <div class="text bottom-right">
-                <a class="project-btn btn-1" href="https://github.com/K3nsei-dev/slider" target="_blank">GITHUB</a>
-                <a class="project-btn btn-1" href="https://lca-testimonials.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/slider"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://lca-testimonials.netlify.app/"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 5 -->
             <div class="panel">
               <p class="text top-left">HTML/CSS</p>
               <div class="text bottom-right">
-                <a class="project-btn btn-1" href="https://github.com/K3nsei-dev/sneaker-website" target="_blank">GITHUB</a>
-                <a class="project-btn btn-1" href="https://sneaker-website.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/sneaker-website"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://sneaker-website.netlify.app/"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 6 -->
             <div class="panel">
               <p class="speech">HTML/CSS</p>
               <div class="speech">
-                <a class="project-btn btn1" href="https://github.com/K3nsei-dev/my-project-cards" target="_blank">GITHUB</a>
-                <a class="project-btn btn1" href="https://lca-projects.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/tkinter-adding-numbers"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://replit.com/@K3nsei/Tkinter-Exercise"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
+            <!-- project 7 -->
             <div class="panel">
               <p class="text top-left">HTML/CSS</p>
               <div class="text bottom-right">
-                <a class="project-btn btn-1" href="" target="_blank">GITHUB</a>
-                <a class="project-btn btn-1" href="" target="_blank">LIVE</a>
+                <a
+                  class="project-btn btn-1"
+                  href="https://github.com/K3nsei-dev/BMI-Converter"
+                  target="_blank"
+                  >GITHUB</a
+                >
+                <a
+                  class="project-btn btn-1"
+                  href="https://replit.com/@K3nsei/BMI-Converter"
+                  target="_blank"
+                  >LIVE</a
+                >
               </div>
             </div>
           </article>
         </div>
       </div>
-        <!-- Testimonials -->
-        <div class="section">
-          <div id="testimonial-container" class="content">
-            <h1>Testimonials</h1>
-            <!-- <div class="wrapper-container">
+      <!-- Testimonials -->
+      <div class="section">
+        <div id="testimonial-container" class="content">
+          <h1>Testimonials</h1>
+          <!-- <div class="wrapper-container">
               <div class="news-item hero-item">
               </div>
               <div class="news-item standard-item">
@@ -436,17 +488,17 @@
               <div class="news-item standard-item">
               </div>
             </div> -->
-          </div>
         </div>
-        <!-- Contact Page -->
-        <div class="section">
-          <div id="contact-container" class="content">
-            <h1>Contact Me</h1>
-            <div class="form-contact-container">
-              <div class="contact-details">
-                <h3>Contact Details</h3>
-                <div>
-                  <h5>Cellphone Number</h5>
+      </div>
+      <!-- Contact Page -->
+      <div class="section">
+        <div id="contact-container" class="content">
+          <h1>Contact Me</h1>
+          <div class="form-contact-container">
+            <div class="contact-details">
+              <h3>Contact Details</h3>
+              <div>
+                <h5>Cellphone Number</h5>
                 <p>Cellphone: 063 192 2598</p>
                 <p>Whatsapp: 083 585 1644</p>
               </div>
@@ -460,75 +512,75 @@
               </div>
             </div>
             <form
-            id="form-container"
-            action="https://formspree.io/f/xleagqab"
-            method="POST"
+              id="form-container"
+              action="https://formspree.io/f/xleagqab"
+              method="POST"
             >
-            <div class="form-group">
-              <label for="name" class="header" class="form-label"
-              >Your Name:</label
-              >
-              <input
-              id="name"
-              type="text"
-              required
-              placeholder="Full Name"
-              name="name"
-              class="form-input"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email" class="header" class="form-label"
-              >Your Email:</label
-              >
-              <input
-              id="email"
-              type="email"
-              name="email"
-              required
-              placeholder="example@mail.com"
-              class="form-input"
-              />
-            </div>
-            <div class="form-group">
-              <label for="contact" class="header" class="form-label"
-              >Your Number:</label
-              >
-              <input
-              id="contact"
-              type="tel"
-              name="contact"
-              required
-              placeholder="083 555 6789"
-              class="form-input"
-              min="10"
-              max="10"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message" class="header" class="form-label"
-              >Your Message:</label
-              >
+              <div class="form-group">
+                <label for="name" class="header" class="form-label"
+                  >Your Name:</label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  required
+                  placeholder="Full Name"
+                  name="name"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="header" class="form-label"
+                  >Your Email:</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="example@mail.com"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact" class="header" class="form-label"
+                  >Your Number:</label
+                >
+                <input
+                  id="contact"
+                  type="tel"
+                  name="contact"
+                  required
+                  placeholder="083 555 6789"
+                  class="form-input"
+                  min="10"
+                  max="10"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="header" class="form-label"
+                  >Your Message:</label
+                >
                 <textarea
-                class="form-input"
-                name="message"
-                id="name"
-                required
-                placeholder="Type your message here..."
+                  class="form-input"
+                  name="message"
+                  id="name"
+                  required
+                  placeholder="Type your message here..."
                 ></textarea>
               </div>
-              
+
               <!-- your other form fields go here -->
-              
+
               <button type="submit" class="button">Send</button>
             </form>
           </div>
         </div>
       </div>
-  </div>
+    </div>
     <!-- External Scripts -->
     <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>

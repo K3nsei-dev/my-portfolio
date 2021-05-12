@@ -229,7 +229,7 @@ s .content {
   transform: translateX(-50%);
 }
 
-.work-and-education {
+/* .work-and-education {
   position: relative;
 }
 
@@ -237,7 +237,7 @@ s .content {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .box {
   margin: 25px;
@@ -447,8 +447,8 @@ s .content {
 }
 
 .panel:nth-child(4) {
-background-image: url(./Images/slider.png);
-background-size: cover;
+  background-image: url(./Images/slider.png);
+  background-size: cover;
 }
 
 .panel:nth-child(5) {
@@ -456,20 +456,20 @@ background-size: cover;
   background-size: cover;
 }
 
-  .panel:nth-child(6) {
-    background-image: url(./Images/adding_numbers.png);
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+.panel:nth-child(6) {
+  background-image: url(./Images/adding_numbers.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-  .panel:nth-child(7) {
-    background-image: url(./Images/BMI\ Converter.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.panel:nth-child(7) {
+  background-image: url(./Images/BMI\ Converter.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .project-btn {
   text-decoration: none;
@@ -481,4 +481,62 @@ background-size: cover;
   border: #e63838;
   border-radius: 50px;
   padding: 5px;
+}
+
+.cards-content {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.cards-content.active {
+  display: block;
+  opacity: 1;
+}
+
+.cards-container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  min-height: 30vh;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 15px;
+}
+
+.button-container button {
+  background: black;
+  border: 2px solid #1e1f26;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.button-container button:hover {
+  background: red;
+  border: 2px solid red;
+  color: black;
+  border-radius: 50px;
+}
+
+h2::before,
+h2::after {
+  content: "-";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

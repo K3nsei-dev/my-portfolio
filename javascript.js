@@ -195,3 +195,12 @@ function init() {
 }
 
 window.addEventListener('DOMContentLoaded', init)
+
+function showTab(elementId) {
+  let tabs = document.getElementsByClassName("cards-content");
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active");
+  }
+
+  document.getElementById(elementId).classList.add("active");
+}
