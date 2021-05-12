@@ -162,6 +162,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%)
 }
 
 h2,
@@ -215,6 +219,8 @@ blockquote p {
   margin-bottom: 0;
   padding: 2.5rem 1rem 1.5rem;
   font-size: var(--font-size-h4);
+  font-weight: bold;
+  text-align: center;
 }
 
 blockquote p strong {
@@ -1044,12 +1050,19 @@ path {
   fill: black;
 }
 
+/* @media screen and (max-width: 360px) {
+  .slide {
+    width: 100%;
+    height: 50%;
+  }
+} */
+
 @media screen and (max-width: 440px) {
   .wrapper {
     display: none;
   }
 
-  .card {
+  /* .card {
     width:100%;
   }
 }
@@ -1059,13 +1072,58 @@ path {
     display: none;
   }
 
-  .card {
+  .card-container {
     width:100%
   }
 }
 
 @media screen and (max-width: 1032px) {
-  .card {
-    width: 100%;
+  .card-container {
+    width: 100%; */
+  /* }
+} */
+
+/*screen resolutions smaller than 950px height*/
+@media screen and (max-width: 950px){
+  #section1.fp-section,
+  #section1 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+
+  #section2.fp-section,
+  #section2 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+  
+  #section3.fp-section,
+  #section3 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+
+  #section4.fp-section,
+  #section4 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+  
+  #section5.fp-section,
+  #section5 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+
+  #section6.fp-section,
+  #section6 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
+  }
+
+  #section7.fp-section,
+  #section7 .fp-tableCell{
+      height: auto !important;
+      min-height: 100%;
   }
 }
