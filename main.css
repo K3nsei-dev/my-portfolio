@@ -310,7 +310,8 @@ s .content {
 }
 
 .box-container p {
-  font-weight: bold;
+  text-shadow: var(--subheading-text-shadow);
+  color: white;
 }
 
 .about-me-section blockquote {
@@ -515,8 +516,8 @@ s .content {
   transition: all 0.3s linear;
 }
 
-h2::before,
-h2::after {
+h4::before,
+h4::after {
   content: "-";
 }
 
@@ -553,9 +554,10 @@ header {
   background: #fff;
   border: solid black;
   border-color: black;
-  background-image: url(/Images/comicbookbackground5.jpg);
+  background-image: url(/Images/comicbookbackground7.jpg);
   background-size: cover;
   background-position: center;
+  flex-direction: row;
 }
 
 .box-testimonials q {
@@ -564,12 +566,25 @@ header {
   align-items: center;
   font-weight: bold;
   text-align: center;
+  color: white;
 }
 
-.box-testimonials img {
-  height: 150px;
+.testimonial-text {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 75px;
+  flex-direction: column;
+}
+
+.testimonial-text h4{
+  text-align: center;
+}
+
+.box-testimonials h2,
+h4,
+q{
+  text-shadow: var(--subheading-text-shadow);
+}
+
+.box-container .fab{
+  text-shadow: var(--subheading-text-shadow);
+  color: white;
 }
