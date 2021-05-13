@@ -165,7 +165,7 @@ h1 {
   position: absolute;
   top: 0px;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 h2,
@@ -182,15 +182,12 @@ h3 {
 
 h4 {
   font-size: var(--font-size-h4);
+  color: var(--color-white);
 }
 
 h5 {
   color: #e63838;
 }
-
-/* p {
-  margin: 0 0 1rem;
-} */
 
 strong {
   font-weight: var(--font-weight-bold);
@@ -296,9 +293,6 @@ nav,
 article,
 aside,
 .page-footer {
-  /* width: 100%;
-  max-width: 65rem;
-  margin: 0 auto; */
   padding: 0.5rem;
   position: fixed;
 }
@@ -714,7 +708,7 @@ nav ul a:focus,
 }
 
 .navbar-button:hover {
-  animation: hamburgerspin 0.5s linear ;
+  animation: hamburgerspin 0.5s linear;
 }
 
 @keyframes hamburgerspin {
@@ -746,6 +740,7 @@ nav ul a:focus,
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 199;
 }
 
 .wrapper {
@@ -1050,80 +1045,53 @@ path {
   fill: black;
 }
 
-/* @media screen and (max-width: 360px) {
-  .slide {
-    width: 100%;
-    height: 50%;
-  }
-} */
-
 @media screen and (max-width: 440px) {
   .wrapper {
     display: none;
   }
-
-  /* .card {
-    width:100%;
-  }
 }
-
-@media screen and (max-width: 800px) {
-  .wrapper {
-    display: none;
-  }
-
-  .card-container {
-    width:100%
-  }
-}
-
-@media screen and (max-width: 1032px) {
-  .card-container {
-    width: 100%; */
-  /* }
-} */
 
 /*screen resolutions smaller than 950px height*/
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   #section1.fp-section,
-  #section1 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section1 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
 
   #section2.fp-section,
-  #section2 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section2 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
-  
+
   #section3.fp-section,
-  #section3 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section3 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
 
   #section4.fp-section,
-  #section4 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section4 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
-  
+
   #section5.fp-section,
-  #section5 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section5 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
 
   #section6.fp-section,
-  #section6 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section6 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
 
   #section7.fp-section,
-  #section7 .fp-tableCell{
-      height: auto !important;
-      min-height: 100%;
+  #section7 .fp-tableCell {
+    height: auto !important;
+    min-height: 100%;
   }
 }

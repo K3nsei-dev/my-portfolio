@@ -12,7 +12,7 @@
 }
 
 .navbar-links.active {
-  top: 0;
+  top: 0;x
 }
 
 .navbar-button {
@@ -20,15 +20,6 @@
   top: 20px;
   right: 20px;
 }
-/* 
-.navbar-button:hover {
-  background: #e63838;
-  border-radius: 50px;
-  transition: all 0.3s linear;
-} */
-
-/* .social-icons {
-} */
 
 .footer-container {
   display: flex;
@@ -47,10 +38,11 @@
 }
 
 .social-icons .fab:hover {
-  background: #white;
-  border-radius: 50px;
+  background: white;
+  border-radius: 10px;
   color: black;
   transition: all 0.3 linear;
+  padding: 10px;
 }
 
 #myMenu {
@@ -88,67 +80,72 @@ s .content {
     gap: 15px; */
 }
 
-#form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  float: right;
-  margin-left: 260px;
+#talkbubble {
+  width: 50vw;
+  margin: 0 auto;
+  background: red;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(https://us.123rf.com/450wm/azaman357/azaman3571708/azaman357170800005/83782954-high-quality-comic-style-background-halftone-print-texture.jpg?ver=6);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  flex-wrap: wrap;
 }
-
-.heading {
-  text-transform: uppercase;
-  text-shadow: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #fd3400;
+  border-bottom: 13px solid transparent;
 }
 
 .form-group {
-  margin-bottom: 10px;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: none;
 }
 
 .form-input {
+  padding: 10px 5%;
   border: none;
-  outline: none;
-  color: black;
-  background: none;
-  border: 0.25rem solid var(--color-black);
+  border-bottom: 2px solid #a90000;
   text-align: center;
-  border-radius: 50px;
-  padding: 10px;
+  border-left: 2px solid #a90000;
+  border-radius: 10px;
+  color: #fe3300;
 }
 
-.form-input::placeholder {
-  color: #e63838;
-}
-
-.button {
-  border: none;
-  outline: none;
+.form-btn {
+  text-decoration: none;
+  white-space: none;
+  background: #fd3400;
+  border: 1px solid #fd3400;
   color: white;
-  padding: 2% 5%;
-  text-transform: uppercase;
   border-radius: 50px;
-  background: red;
-}
-
-.button:hover {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #405561, #4c6574);
-  box-shadow: 11px 11px 23px #3c505c, -11px, -11px, 23px #526c7c;
-}
-
-.contact-details {
+  padding: 10px 5%;
   display: flex;
-  flex-direction: column;
-  line-height: 34px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-btn:hover {
+  background: #af0000;
+  border-radius: 50px;
+  border: 1px solid #af0000;
+  transition: all 0.3s linear;
+  color: white;
 }
 
 #contact-container {
@@ -182,7 +179,6 @@ s .content {
   width: 100%;
   background-color: #e63838;
   color: white;
-  /* text-align: center; */
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -229,20 +225,8 @@ s .content {
   transform: translateX(-50%);
 }
 
-/* .work-and-education {
-  position: relative;
-}
-
-.work-and-education h2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
 .box {
   margin: 25px;
-  width: 250px;
-  height: 250px;
   background: #fff;
   border: solid black;
   border-color: black;
@@ -260,9 +244,9 @@ s .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px;
 }
 .box2 {
-  width: 350px;
   border-width: 3px 3px 5px 5px;
   border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
   transform: rotate(-2deg);
@@ -270,6 +254,7 @@ s .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px;
 }
 
 .box3 {
@@ -280,6 +265,7 @@ s .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px;
 }
 
 .oddboxinner {
@@ -293,11 +279,6 @@ s .content {
 .evenboxinner {
   transform: rotate(2deg);
   margin: 15px;
-  /*   padding:0 5px; */
-  /*   float:right; */
-  /*   background:#ddd; */
-  /*   border:1px solid #222;
-  box-shadow:3px 3px 0 #222; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,10 +289,12 @@ s .content {
   flex-wrap: wrap;
 }
 
-.box p {
+.box q {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card-icon {
@@ -481,10 +464,11 @@ s .content {
   border: #e63838;
   border-radius: 50px;
   padding: 5px;
+  color: black;
+  transition: all 0.3s linear;
 }
 
 .cards-content {
-  /* display: none; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -526,8 +510,9 @@ s .content {
 .button-container button:hover {
   background: red;
   border: 2px solid red;
-  color: black;
+  color: white;
   border-radius: 50px;
+  transition: all 0.3s linear;
 }
 
 h2::before,
@@ -539,4 +524,52 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-container iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.box-testimonials {
+  margin: 25px;
+  background: #fff;
+  border: solid black;
+  border-color: black;
+  background-image: url(/Images/comicbookbackground5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-testimonials q {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-testimonials img {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 75px;
 }

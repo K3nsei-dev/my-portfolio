@@ -24,21 +24,7 @@ new fullpage("#fullpage", {
   afterLoad: function () {
     setInterval(fullpage_api.moveSlideRight(), 1000);
   },
-});
-
-// setInterval(fullpage_api.moveSlideRight(), 100);
-
-// $(document).ready(function () {
-//     $('#fullpage').fullpage({
-//         sectionsColor: ['#1bbc9b', '#4BBFC3'],
-//         loopBottom: true,
-//         afterRender: function () {
-//             setInterval(function () {
-//                 $.fn.fullpage.moveSlideRight();
-//             }, 1000);
-//         }
-//     });
-// });
+})
 
 // NavBar
 function toggleNavbar() {
@@ -195,6 +181,8 @@ function init() {
 }
 
 window.addEventListener('DOMContentLoaded', init)
+
+// button effect on about section
 
 function showTab(elementId) {
   let tabs = document.getElementsByClassName("cards-content");
