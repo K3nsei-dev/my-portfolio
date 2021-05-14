@@ -797,6 +797,81 @@ q{
   .profile-image img{
     margin-bottom: -72%;
   }
+  .box-testimonials q{
+    font-size: 10px;
+  }
+
+  .testimonial-text h4 {
+    font-size: 15px;
+  }
+
+  .box-testimonials h2{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  blockquote p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+    top: 7%;
+  }
+
+  .cards-container-about {
+    font-size: 15px;
+  }
+
+  .button-container{
+    position: absolute;
+    top: 17%;
+    min-width: 72%;
+  }
+
+  .cards-container-about{
+    margin-top: 15%;
+  }
+
+  #myMenu {
+    width: 250px;
+  }
+
+  .comic{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .panel{
+    min-width: 270px;
+  }
+
+  .box-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 275px;
+  }
+
+  .map-container{
+    display: none;
+  }
+
+  .form-input {
+    width: 140px;
+    font-size: 10px;
+  }
+
+  .icon-container {
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    gap: 0px;
+    margin-top: 100px;
+  }
+
+  .icon-container i{
+    font-size: 20px;
+  }
 }
 
 /* tiny screens */
@@ -866,5 +941,18 @@ q{
 
   .profile-image img{
     margin-bottom: -41%;
+  }
+
+  .box-testimonials q{
+    font-size: 10px;
+  }
+
+  .testimonial-text h4 {
+    font-size: 15px;
+  }
+
+  .box-testimonials h2{
+    text-align: center;
+    font-size: 20px;
   }
 }
