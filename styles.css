@@ -14,11 +14,11 @@ body {
 
 /* Make images easier to work with */
 img {
-  display: block;
+  /* display: block;
   height: 170px;
   border-radius: 150px;
   width: 170px;
-  object-fit: cover
+  object-fit: cover */
 }
 
 /* Theme */
@@ -244,6 +244,8 @@ blockquote p {
   font-size: var(--font-size-h4);
   font-weight: bold;
   text-align: center;
+  text-shadow: var(--subheading-text-shadow);
+  color: white;
 }
 
 blockquote p strong {
@@ -734,20 +736,12 @@ nav ul a:focus,
 }
 
 .navbar-button:hover {
-  animation: hamburgerspin 0.5s linear;
+  animation: hamburgerspin 1s linear;
 }
 
 @keyframes hamburgerspin {
   0% {
-    transform: rotateZ(0);
-  }
-
-  50% {
-    transform: rotateZ(-90deg);
-  }
-
-  100% {
-    transform: rotateZ(0);
+    transform: rotateZ(360deg);
   }
 }
 

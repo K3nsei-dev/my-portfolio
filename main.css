@@ -45,11 +45,11 @@
   padding: 10px;
 }
 
-#myMenu {
+/* #myMenu {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #home-container header {
   height: 100%;
@@ -60,6 +60,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  flex-direction: column;
 }
 
 .section {
@@ -147,6 +148,26 @@ s .content {
   transition: all 0.3s linear;
   color: white;
 }
+
+.form-map-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+}
+
 
 #contact-container {
   height: 100%;
@@ -312,6 +333,7 @@ s .content {
 .box-container p {
   text-shadow: var(--subheading-text-shadow);
   color: white;
+
 }
 
 .about-me-section blockquote {
@@ -535,19 +557,28 @@ header {
   line-height: 30px;
 }
 
-#contact-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.icon-info p{
+  text-shadow: var(--subheading-text-shadow);
+  color: white;
 }
 
-.details-container iframe{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.icon-info a{
+  font-size: 30px;
 }
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+iframe {
+  display: flex;
+  height: 380px;
+  width: 500;
+  }
 
 .box-testimonials {
   margin: 25px;
@@ -587,4 +618,227 @@ q{
 .box-container .fab{
   text-shadow: var(--subheading-text-shadow);
   color: white;
+}
+
+.testimonial-image img{
+  display: block;
+  height: 170px;
+  border-radius: 150px;
+  width: 170px;
+  object-fit: cover
+}
+
+.profile-image img{
+  display: flex;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: -85%;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 1536px) {
+  h1 {
+    font-size: 70px;
+    top: 7%;
+  }
+
+  .profile-image img{
+    margin-bottom: -49%;
+  }
+
+  .comic {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .panel{
+    min-width: 400px;
+  }
+
+  .icon-info{
+    margin-bottom: -5%;
+  }
+
+  .form-map-container{
+    margin-bottom: -5%;
+  }
+
+  .button-container{
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .comic{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .panel{
+    min-width: 300px;
+  }
+  
+  .box-container {
+    flex-wrap: nowrap;
+  }
+  
+  .button-container{
+    position: absolute;
+    top: 215px;
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 70px;
+    top: 7%;
+  }
+
+  .map-container{
+    display: none;
+  }
+
+  .form-input {
+    width: 140px;
+    font-size: 10px;
+  }
+
+  .icon-container {
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    gap: 0px;
+    margin-top: 100px;
+  }
+
+  .icon-container i{
+    font-size: 20px;
+  }
+
+  .profile-image img{
+  margin-bottom: -49%;
+  }
+
+  .cards-container-about{
+    margin-bottom: -10%;
+  }
+
+  .map-container{
+    display: block;
+  }
+
+  .map-container iframe{
+    height: 305px;
+  }
+}
+
+/* desktop */
+@media screen and (max-width: 1366px) {
+  .comic{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .panel{
+    min-width: 300px;
+  }
+  
+  .box-container {
+    flex-wrap: nowrap;
+  }
+  
+  .button-container{
+    position: absolute;
+    top: 220px;
+    width: 75%;
+  }
+  
+  h1 {
+    font-size: 70px;
+    top: 7%;
+  }
+
+  .map-container{
+    display: block;
+  }
+
+  .map-container iframe{
+    height: 305px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .profile-image img{
+    margin-bottom: -72%;
+  }
+}
+
+/* tiny screens */
+@media screen and (max-width: 440px) {
+  blockquote p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+    top: 7%;
+  }
+
+  .cards-container-about {
+    font-size: 15px;
+  }
+
+  .button-container{
+    position: absolute;
+    top: 17%;
+    min-width: 72%;
+  }
+
+  .cards-container-about{
+    margin-top: 15%;
+  }
+
+  #myMenu {
+    width: 250px;
+  }
+
+  .comic{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .panel{
+    min-width: 270px;
+  }
+
+  .box-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 275px;
+  }
+
+  .map-container{
+    display: none;
+  }
+
+  .form-input {
+    width: 140px;
+    font-size: 10px;
+  }
+
+  .icon-container {
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    gap: 0px;
+    margin-top: 100px;
+  }
+
+  .icon-container i{
+    font-size: 20px;
+  }
+
+  .profile-image img{
+    margin-bottom: -41%;
+  }
 }

@@ -193,15 +193,14 @@
           <header>
             <div class="container">
               <div class="heading-container">
-                <!-- <img src="./Images/Jeandre Awood No Background.png" alt="" /> -->
+                <div class="profile-image">
+                  <img src="/Images/" alt="" />
+                </div>
                 <h1>Jeandre Awood</h1>
               </div>
               <div id="changeText">Aspiring Frontend Developer</div>
             </div>
           </header>
-          <div class="profile-image">
-            <img src="./Images/Jeandre Awood No Background.png" alt="" />
-          </div>
         </div>
       </div>
       <!-- About Me -->
@@ -330,21 +329,18 @@
               <div class="card-icon">
                 <i class="fab fa-html5"></i>
               </div>
-              <p>Beginner</p>
             </div>
             <div class="box box2">
               <h3 class="evenboxinner">CSS</h3>
               <div class="card-icon">
                 <i class="fab fa-css3-alt"></i>
               </div>
-              <p>Beginner</p>
             </div>
             <div class="box box3">
               <h3 class="oddboxinner">Python</h3>
               <div class="card-icon">
                 <i class="fab fa-python"></i>
               </div>
-              <p>Beginner</p>
             </div>
           </div>
         </div>
@@ -487,7 +483,6 @@
       <div class="section">
         <div id="testimonial-container" class="content">
           <h1>Testimonials</h1>
-          <!-- <div class="box-container"> -->
           <div class="slide" data-anchor="slide4">
             <div class="box-testimonials box1">
               <div>
@@ -507,7 +502,7 @@
                 >
               </div>
             </div>
-          </div>
+          </d>
           <div class="slide" data-anchor="slide5">
             <div class="box-testimonials box2">
               <div class="testimonial-image">
@@ -588,98 +583,105 @@
           </div>
         </div>
       </div>
+      </div>
       <!-- Contact Page -->
       <div class="section">
         <h1>Contact Me</h1>
         <div id="contact-container" class="content">
           <div class="details-container">
-            <div class="icon-info">
-              <a href="tel:+27631922598"><i class="fas fa-phone-alt"></i></a>
-              063 192 2598
-            </div>
-            <div class="icon-info">
-              <a
-                href="https://api.whatsapp.com/send?phone=0835851644"
-                target="_blank"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-              083 585 1644
-            </div>
-            <div class="icon-info">
-              <a href="mailto:jeandreross@gmail.com" target="_blank"
-                ><i class="fas fa-envelope"></i
-              ></a>
-              jeandreross@gmail.com
-            </div>
-            <div class="icon-info">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52885.71401090228!2d18.48326913149476!3d-34.06035837725899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc415380a3a2d5%3A0x45665c22acda837!2sGrassy%20Park%2C%20Cape%20Town%2C%207941!5e0!3m2!1sen!2sza!4v1620900727391!5m2!1sen!2sza"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+            <div class="icon-container">
+              <div class="icon-info">
+                <a href="tel:+27631922598"><i class="fas fa-phone-alt"></i></a>
+               <p>063 192 2598</p>
+              </div>
+              <div class="icon-info">
+                <a
+                  href="https://api.whatsapp.com/send?phone=0835851644"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+               <p>083 585 1644</p>
+              </div>
+              <div class="icon-info">
+                <a href="mailto:jeandreross@gmail.com" target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <p>jeandreross@gmail.com</p> 
+              </div>
             </div>
           </div>
-          <form action="https://formspree.io/f/xleagqab" method="POST">
-            <div id="talkbubble">
-              <div class="form-group">
-                <label for="name" class="header form-label">Your Name:</label>
-                <input
-                  id="name"
-                  type="text"
-                  required
-                  placeholder="Full Name"
-                  name="name"
-                  class="form-input input-1"
-                />
-              </div>
-              <div class="form-group">
-                <label for="contact" class="header" class="form-label"
-                  >Your Number:</label
-                >
-                <input
-                  id="contact"
-                  type="tel"
-                  name="contact"
-                  required
-                  placeholder="083 555 6789"
-                  min="10"
-                  max="10"
-                  class="form-input input-2"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email" class="header" class="form-label"
-                  >Your Email:</label
-                >
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="example@mail.com"
-                  class="form-input input-3"
-                />
-              </div>
-              <div class="form-group">
-                <label for="message" class="header" class="form-label"
-                  >Your Message:</label
-                >
-                <textarea
-                  name="message"
-                  class="form-input input-4"
-                  id="name"
-                  required
-                  placeholder="Type your message here..."
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="form-btn input-5">Send</button>
-              </div>
+          <div class="form-map-container">
+            <div class="form-container">
+              <form action="https://formspree.io/f/xleagqab" method="POST">
+                <div id="talkbubble">
+                  <div class="form-group">
+                    <label for="name" class="header form-label">Your Name:</label>
+                    <input
+                      id="name"
+                      type="text"
+                      required
+                      placeholder="Full Name"
+                      name="name"
+                      class="form-input input-1"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact" class="header" class="form-label"
+                      >Your Number:</label
+                    >
+                    <input
+                      id="contact"
+                      type="tel"
+                      name="contact"
+                      required
+                      placeholder="083 555 6789"
+                      min="10"
+                      max="10"
+                      class="form-input input-2"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="header" class="form-label"
+                      >Your Email:</label
+                    >
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="example@mail.com"
+                      class="form-input input-3"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="header" class="form-label"
+                      >Your Message:</label
+                    >
+                    <textarea
+                      name="message"
+                      class="form-input input-4"
+                      id="name"
+                      required
+                      placeholder="Type your message here..."
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="form-btn input-5">Send</button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
+            <div class="map-container">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52885.71401090228!2d18.48326913149476!3d-34.06035837725899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc415380a3a2d5%3A0x45665c22acda837!2sGrassy%20Park%2C%20Cape%20Town%2C%207941!5e0!3m2!1sen!2sza!4v1620900727391!5m2!1sen!2sza"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
