@@ -585,10 +585,14 @@ iframe {
   background: #fff;
   border: solid black;
   border-color: black;
-  background-image: url(/Images/comicbookbackground7.jpg);
+  /* background-image: url(/Images/comicbookbackground7.jpg); */
   background-size: cover;
   background-position: center;
   flex-direction: row;
+  position: relative;
+  height: 60%;
+  overflow: hidden;
+
 }
 
 .box-testimonials q {
@@ -620,12 +624,34 @@ q{
   color: white;
 }
 
-.testimonial-image img{
-  display: block;
-  height: 170px;
-  border-radius: 150px;
-  width: 170px;
-  object-fit: cover
+
+
+
+.testimonial-overlay {
+  opacity: 0.4;
+}
+
+.testimonial-image,
+.testimonial-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-image img{
