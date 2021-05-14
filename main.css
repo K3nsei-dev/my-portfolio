@@ -639,6 +639,7 @@ q{
   right: 0;
   bottom: 0;
   object-fit: cover;
+  object-position: top;
   height: 100%;
   width: 100%;
 }
@@ -686,9 +687,9 @@ q{
     margin-bottom: -5%;
   }
 
-  .form-map-container{
+  /* .form-map-container{
     margin-bottom: -5%;
-  }
+  } */
 
   .button-container{
     margin-bottom: 4%;
@@ -746,7 +747,7 @@ q{
   }
 
   .cards-container-about{
-    margin-bottom: -10%;
+    margin-bottom: -15%;
   }
 
   .map-container{
@@ -795,7 +796,7 @@ q{
 
 @media screen and (max-width: 800px){
   .profile-image img{
-    margin-bottom: -72%;
+    margin-bottom: -29%%;
   }
   .box-testimonials q{
     font-size: 10px;
@@ -829,9 +830,9 @@ q{
     min-width: 72%;
   }
 
-  .cards-container-about{
-    margin-top: 15%;
-  }
+  /* .cards-container-about{
+    margin-top: 5%;
+  } */
 
   #myMenu {
     width: 250px;
@@ -871,6 +872,10 @@ q{
 
   .icon-container i{
     font-size: 20px;
+  }
+
+  .profile-image img{
+    margin-bottom: -24%;
   }
 }
 

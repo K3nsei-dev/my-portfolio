@@ -403,6 +403,10 @@ nav ul {
   background-color: var(--color-red);
 }
 
+#fp-nav{
+  display: none;
+}
+
 @media (min-width: 540px) {
   nav ul {
     display: flex;
