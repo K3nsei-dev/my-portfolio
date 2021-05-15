@@ -602,6 +602,7 @@ iframe {
   font-weight: bold;
   text-align: center;
   color: white;
+  padding: 15px;
 }
 
 .testimonial-text {
@@ -774,8 +775,8 @@ q{
   
   .button-container{
     position: absolute;
-    top: 220px;
-    width: 75%;
+    top: 200px;
+    width: 78%;
   }
   
   h1 {
@@ -802,6 +803,10 @@ q{
 }
 
 @media screen and (max-width: 800px){
+  #fp-nav{
+    display: none;
+  }
+  
   .profile-image img{
     margin-bottom: -29%%;
   }
@@ -848,6 +853,7 @@ q{
   .comic{
     flex-wrap: nowrap;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .panel{
@@ -890,6 +896,10 @@ q{
 
 /* tiny screens */
 @media screen and (max-width: 440px) {
+  #fp-nav{
+    display: none;
+  }
+  
   .cat_wrapper{
     display: none;
   }
@@ -924,6 +934,7 @@ q{
   .comic{
     flex-wrap: nowrap;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .panel{
