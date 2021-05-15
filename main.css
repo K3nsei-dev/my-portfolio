@@ -350,7 +350,6 @@ s .content {
 .comic {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Comic Sans", cursive;
   padding: 10px;
   width: 90%;
 }
@@ -921,8 +920,8 @@ q{
 
   .button-container{
     position: absolute;
-    top: 17%;
-    min-width: 72%;
+    /* top: 17%;
+    min-width: 72%; */
   }
 
   .cards-container-about{
