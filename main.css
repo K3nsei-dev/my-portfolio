@@ -864,6 +864,8 @@ q{
     flex-wrap: nowrap;
     overflow-x: scroll;
     width: 275px;
+    position: static;
+    -webkit-overflow-scrolling: touch;
   }
 
   .map-container{
@@ -935,6 +937,7 @@ q{
     flex-wrap: nowrap;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    position: static;
   }
 
   .panel{
@@ -945,6 +948,8 @@ q{
     flex-wrap: nowrap;
     overflow-x: scroll;
     width: 275px;
+    position: static;
+    -webkit-overflow-scrolling: touch;
   }
 
   .map-container{
