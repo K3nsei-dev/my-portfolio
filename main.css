@@ -774,7 +774,7 @@ q{
   
   .button-container{
     position: absolute;
-    top: 200px;
+    top: 195px;
     width: 78%;
   }
   
@@ -799,6 +799,11 @@ q{
     display: flex;
     
   }
+
+  .cards-container-about {
+    margin-bottom: -15%;
+}
+
 }
 
 @media screen and (max-width: 800px){
