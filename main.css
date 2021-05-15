@@ -901,7 +901,7 @@ q{
     display: none;
   }
   
-  .cat_wrapper{
+  .wrapper{
     display: none;
   }
   
@@ -989,7 +989,7 @@ q{
     font-size: 20px;
   }
 
-  .footer-container{
+  .outer_wrapper {
     width: 100% !important;
     margin: 0 !important;
     height: 100% !important;
