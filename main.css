@@ -956,8 +956,57 @@ q{
   }
 
   .panel{
-    min-width: 270px;
+    min-width: 240px;
   }
+
+  .panel:nth-child(1) {
+    background-image: url(./Images/contact-form.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.panel:nth-child(2) {
+  background-image: url(./Images/timeline.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(3) {
+  background-image: url(./Images/project\ cards.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(4) {
+  background-image: url(./Images/slider.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(5) {
+  background-image: url(./Images/sneaker-website.png);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(6) {
+  background-image: url(./Images/adding_numbers.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel:nth-child(7) {
+  background-image: url(./Images/BMI\ Converter.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   .box-container {
     flex-wrap: nowrap;
