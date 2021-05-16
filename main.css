@@ -923,6 +923,12 @@ q{
     font-size: 12px;
   }
 
+  .icon-info p {
+    text-shadow: none;
+    color: black;
+    text-align: center;
+}
+
   h2{
     font-size: 20px;
     line-height: 50px;
@@ -1004,6 +1010,10 @@ q{
     margin: 0 !important;
     height: 100% !important;
   }
+
+  .form-map-container {
+    margin-bottom: 10%;
+}
 }
 
 .fp-controlArrow{
