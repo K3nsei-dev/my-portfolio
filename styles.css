@@ -5,20 +5,11 @@
 }
 
 body {
-  font-size: 100%;
+  /* font-size: 100%; */
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-/* Make images easier to work with */
-img {
-  /* display: block;
-  height: 170px;
-  border-radius: 150px;
-  width: 170px;
-  object-fit: cover */
+  /* overflow-x: hidden; */
+  /* scroll-behavior: smooth; */
 }
 
 /* Theme */

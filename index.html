@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeandre Awood Portfolio</title>
-    <link rel="shortcut icon" href="./Images/LCA-Icon.png" type="image">
+    <link rel="shortcut icon" href="./Images/LCA-Icon.png" type="image" />
     <!-- Third Party CSS -->
     <link
       rel="stylesheet"
@@ -21,6 +21,8 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./loader.scss" />
+    <link rel="stylesheet" href="./loader.css">
   </head>
   <body>
     <nav class="navbar">
@@ -190,6 +192,15 @@
     <div id="fullpage">
       <!-- Landing Page -->
       <div class="section">
+              <!-- Loader -->
+      <!-- <div class="loader-container">
+        <div class="loader book">
+          <figure class="page"></figure>
+          <figure class="page"></figure>
+          <figure class="page"></figure>  
+        </div>
+        <h4>Loading</h4>
+      </div> -->
         <div id="home-container" class="content">
           <header>
             <div class="container">
@@ -343,6 +354,12 @@
                 <i class="fab fa-python"></i>
               </div>
             </div>
+            <div class="box box1">
+              <h3 class="oddboxinner">SCSS</h3>
+              <div class="card-icon">
+                <i class="fab fa-sass"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -359,7 +376,7 @@
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/contact-form"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -377,7 +394,7 @@
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/timeline"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -395,7 +412,7 @@
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/my-project-cards"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -413,7 +430,7 @@
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/slider"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -431,7 +448,7 @@
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/sneaker-website"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -443,13 +460,13 @@
             </div>
             <!-- project 6 -->
             <div class="panel">
-              <p class="text top-left">HTML/CSS</p>
+              <p class="text top-left">PYTHON</p>
               <div class="text bottom-right">
                 <a
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/tkinter-adding-numbers"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -461,13 +478,13 @@
             </div>
             <!-- project 7 -->
             <div class="panel">
-              <p class="text top-left">HTML/CSS</p>
+              <p class="text top-left">PYTHON</p>
               <div class="text bottom-right">
                 <a
                   class="project-btn btn-1"
                   href="https://github.com/K3nsei-dev/BMI-Converter"
                   target="_blank"
-                  >GITHUB</a
+                  >CODE BASE /</a
                 >
                 <a
                   class="project-btn btn-1"
@@ -491,8 +508,12 @@
                 src="https://www.lifechoices.co.za/sites/default/files/2021-03/2021-team-jason-wandrag.jpg"
                 alt="Jason Wandrag"
               />
-              <img class="testimonial-overlay" src="./Images/comicbookbackground7.jpg" alt="Overlay">
-              
+              <img
+                class="testimonial-overlay"
+                src="./Images/comicbookbackground7.jpg"
+                alt="Overlay"
+              />
+
               <div class="testimonial-text">
                 <h2 class="oddboxinner">Jason Wandrag</h2>
                 <h4>Frontend Lecturer</h4>
@@ -506,11 +527,16 @@
           </div>
           <div class="slide" data-anchor="slide5">
             <div class="box-testimonials box2">
-                <img class="testimonial-image"
-                  src="https://www.lifechoices.co.za/sites/default/files/2020-01/godwin-dzvapatsra.jpg"
-                  alt="godwin Dzvapatsra"
-                />
-                <img src="./Images/comicbookbackground7.jpg" alt="overlay" class="testimonial-overlay">
+              <img
+                class="testimonial-image"
+                src="https://www.lifechoices.co.za/sites/default/files/2020-01/godwin-dzvapatsra.jpg"
+                alt="godwin Dzvapatsra"
+              />
+              <img
+                src="./Images/comicbookbackground7.jpg"
+                alt="overlay"
+                class="testimonial-overlay"
+              />
               <div class="testimonial-text">
                 <h2 class="evenboxinner">Godwin Dzvapatsva</h2>
                 <h4>Head of Curriculum and Learning</h4>
@@ -523,11 +549,16 @@
           </div>
           <div class="slide" data-anchor="slide6">
             <div class="box-testimonials box3">
-                <img class="testimonial-image"
-                  src="https://www.lifechoices.co.za/sites/default/files/2020-01/candice-amon.png"
-                  alt="Candice Amon"
-                />
-                <img src="./Images/comicbookbackground7.jpg" alt="overlay" class="testimonial-overlay">
+              <img
+                class="testimonial-image"
+                src="https://www.lifechoices.co.za/sites/default/files/2020-01/candice-amon.png"
+                alt="Candice Amon"
+              />
+              <img
+                src="./Images/comicbookbackground7.jpg"
+                alt="overlay"
+                class="testimonial-overlay"
+              />
               <div class="testimonial-text">
                 <h2 class="oddboxinner">Candice Amon</h2>
                 <h4>Head of Personal & Professional Development</h4>
@@ -540,11 +571,19 @@
                 </q>
               </div>
             </div>
-            </div>
+          </div>
           <div class="slide" data-anchor="slide7">
             <div class="box-testimonials box1">
-                <img src="./Images/C8 Apr21 Justin Calvert (2).JPG" alt="Justin Calvery" class="testimonial-image"/>
-                <img src="./Images/comicbookbackground7.jpg" alt="overlay" class="testimonial-overlay">
+              <img
+                src="./Images/C8 Apr21 Justin Calvert (2).JPG"
+                alt="Justin Calvery"
+                class="testimonial-image"
+              />
+              <img
+                src="./Images/comicbookbackground7.jpg"
+                alt="overlay"
+                class="testimonial-overlay"
+              />
               <div class="testimonial-text">
                 <h2 class="oddboxinner">Justin Calvert</h2>
                 <h4>Colleague</h4>
@@ -558,8 +597,16 @@
           </div>
           <div class="slide" data-anchor="slide8">
             <div class="box-testimonials box2">
-                <img src="./Images/C8 Apr21 Abdullah Isaacs (4).JPG" alt="Abdullah Isaacs" class="testimonial-image" />
-                <img src="./Images/comicbookbackground7.jpg" alt="overlay" class="testimonial-overlay">
+              <img
+                src="./Images/C8 Apr21 Abdullah Isaacs (4).JPG"
+                alt="Abdullah Isaacs"
+                class="testimonial-image"
+              />
+              <img
+                src="./Images/comicbookbackground7.jpg"
+                alt="overlay"
+                class="testimonial-overlay"
+              />
               <div class="testimonial-text">
                 <h2 class="evenboxinner">Abdullah Isaacs</h2>
                 <h4>Colleague</h4>
@@ -577,9 +624,9 @@
                 >
               </div>
             </div>
-            </div>
           </div>
         </div>
+      </div>
       <!-- Contact Page -->
       <div class="section">
         <h1>Contact Me</h1>
@@ -588,7 +635,7 @@
             <div class="icon-container">
               <div class="icon-info">
                 <a href="tel:+27631922598"><i class="fas fa-phone-alt"></i></a>
-               <p>063 192 2598</p>
+                <p>063 192 2598</p>
               </div>
               <div class="icon-info">
                 <a
@@ -596,13 +643,13 @@
                   target="_blank"
                   ><i class="fab fa-whatsapp"></i
                 ></a>
-               <p>083 585 1644</p>
+                <p>083 585 1644</p>
               </div>
               <div class="icon-info">
                 <a href="mailto:jeandreross@gmail.com" target="_blank"
                   ><i class="fas fa-envelope"></i
                 ></a>
-                <p>jeandreross@gmail.com</p> 
+                <p>jeandreross@gmail.com</p>
               </div>
             </div>
           </div>
@@ -611,7 +658,9 @@
               <form action="https://formspree.io/f/xleagqab" method="POST">
                 <div id="talkbubble">
                   <div class="form-group">
-                    <label for="name" class="header form-label">Your Name:</label>
+                    <label for="name" class="header form-label"
+                      >Your Name:</label
+                    >
                     <input
                       id="name"
                       type="text"
@@ -669,13 +718,13 @@
             </div>
             <div class="map-container">
               <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52885.71401090228!2d18.48326913149476!3d-34.06035837725899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc415380a3a2d5%3A0x45665c22acda837!2sGrassy%20Park%2C%20Cape%20Town%2C%207941!5e0!3m2!1sen!2sza!4v1620900727391!5m2!1sen!2sza"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52885.71401090228!2d18.48326913149476!3d-34.06035837725899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc415380a3a2d5%3A0x45665c22acda837!2sGrassy%20Park%2C%20Cape%20Town%2C%207941!5e0!3m2!1sen!2sza!4v1620900727391!5m2!1sen!2sza"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>

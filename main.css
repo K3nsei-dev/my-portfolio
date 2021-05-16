@@ -920,7 +920,12 @@ q{
   }
 
   .cards-container-about {
-    font-size: 15px;
+    font-size: 12px;
+  }
+
+  h2{
+    font-size: 20px;
+    line-height: 50px;
   }
 
   .button-container{
@@ -967,7 +972,7 @@ q{
 
   .icon-container {
     font-size: 15px;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     gap: 0px;
     margin-top: 100px;
@@ -1004,3 +1009,4 @@ q{
 .fp-controlArrow{
   display: none;
 }
+
