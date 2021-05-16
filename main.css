@@ -1072,6 +1072,10 @@ q{
 #talkbubble{
   height: 200px;
 }
+
+.panda-wrapper{
+  display: none;
+}
 }
 
 .fp-controlArrow{
