@@ -394,9 +394,9 @@ nav ul {
   background-color: var(--color-red);
 }
 
-/* #fp-nav{
-  display: none;
-} */
+#fp-nav{
+  display: block;
+}
 
 @media (min-width: 540px) {
   nav ul {

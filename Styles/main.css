@@ -325,6 +325,11 @@ s .content {
   font-size: 30px;
 }
 
+.box h3{
+  display: flex;
+  flex-direction: row;
+}
+
 .box h3::before,
 .box h3::after {
   content: "-";
@@ -1076,9 +1081,5 @@ q{
 .panda-wrapper{
   display: none;
 }
-}
-
-.fp-controlArrow{
-  display: none;
 }
 
