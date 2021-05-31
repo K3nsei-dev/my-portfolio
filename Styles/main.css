@@ -82,7 +82,7 @@ s .content {
 }
 
 #talkbubble {
-  width: 35vw;
+  width: 38vw;
   margin: 0 auto;
   background: red;
   position: relative;
@@ -357,6 +357,7 @@ s .content {
   flex-wrap: wrap;
   padding: 10px;
   width: 90%;
+  padding: 6%;
 }
 
 .panel {
@@ -580,8 +581,9 @@ header {
 
 iframe {
   display: flex;
-  height: 380px;
-  width: 500;
+  height: 375px;
+  width: 38vw;
+  border: 0px;
   }
 
 .box-testimonials {
@@ -680,8 +682,7 @@ q{
   }
 
   .comic {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+    height: 88vh;
   }
 
   .panel{
@@ -717,7 +718,7 @@ q{
   
   .button-container{
     position: absolute;
-    top: 215px;
+    top: 280px;
     width: 75%;
   }
 
@@ -750,7 +751,7 @@ q{
   }
 
   .cards-container-about{
-    margin-bottom: -15%;
+    margin-bottom: -8%;
   }
 
   .map-container{
@@ -779,7 +780,7 @@ q{
   
   .button-container{
     position: absolute;
-    top: 195px;
+    top: 290px;
     width: 78%;
   }
   
@@ -910,22 +911,29 @@ q{
   #fp-nav{
     display: none;
   }
+  header h1{
+    position: relative;
+    top: 7px;
+    left: 100px;
+  }
   
   .wrapper{
     display: none;
   }
   
   blockquote p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 22px;
     top: 7%;
   }
 
   .cards-container-about {
     font-size: 12px;
+    margin-bottom: -35%;
+    font-size: 10px;
   }
 
   .icon-info p {
@@ -941,12 +949,7 @@ q{
 
   .button-container{
     position: absolute;
-    top: 150px;
-  }
-
-  .cards-container-about{
-    margin-bottom: -25%;
-    font-size: 10px;
+    top: 110px;
   }
 
   #myMenu {
@@ -1027,6 +1030,7 @@ q{
 
   .form-input {
    padding: 0;
+   width: 90%;
   }
 
   .form-btn{
@@ -1048,7 +1052,8 @@ q{
   }
 
   .profile-image img{
-    margin-bottom: -41%;
+    margin-bottom: -31%;
+    width: 87%;
   }
 
   .box-testimonials q{
@@ -1081,5 +1086,10 @@ q{
 .panda-wrapper{
   display: none;
 }
+
+navbar-button {
+  position: fixed;
+  top: 20px;
+  right: 0px;
 }
 
