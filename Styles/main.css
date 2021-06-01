@@ -355,9 +355,9 @@ s .content {
 .comic {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  /* padding: 10px; */
   width: 90%;
-  padding: 6%;
+  /* padding: 6%; */
 }
 
 .panel {
@@ -681,9 +681,9 @@ q{
     margin-bottom: -49%;
   }
 
-  .comic {
+  /* .comic {
     height: 88vh;
-  }
+  } */
 
   .panel{
     min-width: 400px;
@@ -706,6 +706,7 @@ q{
   .comic{
     flex-wrap: nowrap;
     overflow-x: scroll;
+    /* margin-bottom: -400px; */
   }
   
   .panel{
@@ -960,7 +961,7 @@ q{
     flex-wrap: nowrap;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    position: static;
+    position: static; 
   }
 
   .panel{
