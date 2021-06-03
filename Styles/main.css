@@ -12,7 +12,9 @@
 }
 
 .navbar-links.active {
-  top: 0;x
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar-button {
@@ -839,7 +841,7 @@ q{
 }
 }
 
-@media screen and  (max-width: 1294px) {
+@media screen and (max-width: 1294px) {
   .form-btn{
     top: 230px;  
   }
@@ -897,9 +899,9 @@ q{
     margin-top: 0;
   }
 
-  #myMenu {
+  /* #myMenu {
     width: 250px;
-  }
+  } */
 
   .comic{
     flex-wrap: nowrap;
@@ -998,10 +1000,10 @@ q{
     position: absolute;
     top: 110px;
   }
-
+/* 
   #myMenu {
     width: 250px;
-  }
+  } */
 
   .comic{
     flex-wrap: nowrap;
