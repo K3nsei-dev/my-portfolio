@@ -837,7 +837,16 @@ q{
   .cards-container-about {
     margin-bottom: -15%;
 }
+}
 
+@media screen and  (max-width: 1294px) {
+  .form-btn{
+    top: 230px;  
+  }
+
+  .cards-container-about{
+    margin-bottom: -25%;
+  }
 }
 
 @media screen and (max-width: 800px){
@@ -846,7 +855,7 @@ q{
   }
   
   .profile-image img{
-    margin-bottom: -29%%;
+    margin-bottom: -29%;
   }
   .box-testimonials q{
     font-size: 10px;
