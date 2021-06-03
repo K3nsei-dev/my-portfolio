@@ -328,6 +328,7 @@ s .content {
 .box h3{
   display: flex;
   flex-direction: row;
+  line-height: 180%;
 }
 
 .box h3::before,
@@ -357,7 +358,7 @@ s .content {
   flex-wrap: wrap;
   /* padding: 10px; */
   width: 90%;
-  /* padding: 6%; */
+  padding: 6%;
 }
 
 .panel {
@@ -631,8 +632,9 @@ q{
   color: white;
 }
 
-
-
+.map-icon{
+  display: none;
+}
 
 .testimonial-overlay {
   opacity: 0.4;
@@ -700,6 +702,22 @@ q{
   .button-container{
     margin-bottom: 4%;
   }
+
+  .map-icon{
+    display: none;
+  }
+}
+
+@media  (max-width: 1500px) {
+  .comic {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .map-icon{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -709,6 +727,11 @@ q{
     /* margin-bottom: -400px; */
   }
   
+  .map-icon{
+    display: none;
+  }
+
+
   .panel{
     min-width: 300px;
   }
@@ -771,6 +794,10 @@ q{
     overflow-x: scroll;
   }
   
+  .map-icon {
+    display: none;
+  }
+
   .panel{
     min-width: 300px;
   }
@@ -802,10 +829,10 @@ q{
   margin-top: 0;
   }
 
-  .icon-info{
+  /* .icon-info{
     display: flex;
     
-  }
+  } */
 
   .cards-container-about {
     margin-bottom: -15%;
@@ -823,6 +850,10 @@ q{
   }
   .box-testimonials q{
     font-size: 10px;
+  }
+
+  #talkbubble{
+    width: 80vw;
   }
 
   .testimonial-text h4 {
@@ -884,14 +915,14 @@ q{
   }
 
   .form-input {
-    width: 140px;
-    font-size: 10px;
+    width: 50%;
+    font-size: 15px;
   }
 
   .icon-container {
     font-size: 15px;
     display: flex;
-    gap: 20px;
+    gap: 35px;
   }
 
   .icon-container i{
@@ -903,6 +934,12 @@ q{
   }
 
   .cat_wrapper{
+    display: none;
+  }
+  .map-icon{
+    display: block;
+  }
+  .icon-info p{
     display: none;
   }
 }
@@ -1031,21 +1068,20 @@ q{
 
   .form-input {
    padding: 0;
-   width: 90%;
+   width: 70%;
   }
 
   .form-btn{
     position: absolute;
-    top: 160px;
-    padding: 2px;
+    top: 205px;
+    padding: 6px;
   }
 
   .icon-container {
     font-size: 15px;
     flex-direction: row;
     display: flex;
-    gap: 0px;
-    margin-top: 100px;
+    gap: 35px;
   }
 
   .icon-container i{
@@ -1081,16 +1117,25 @@ q{
 }
 
 #talkbubble{
-  height: 200px;
+  height: 40vh;
+  width: 75vw;
+}
+
+.icon-info p{
+  display: none;
 }
 
 .panda-wrapper{
   display: none;
 }
 
-navbar-button {
+.navbar-button {
   position: fixed;
   top: 20px;
   right: 0px;
 }
 
+.map-icon{
+  display: block;
+}
+}
