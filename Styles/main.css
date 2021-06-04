@@ -810,7 +810,7 @@ q{
   
   .button-container{
     position: absolute;
-    top: 290px;
+    top: 250px;
     width: 78%;
   }
   
@@ -837,7 +837,7 @@ q{
   } */
 
   .cards-container-about {
-    margin-bottom: -15%;
+    margin-bottom: -20%;
 }
 }
 
