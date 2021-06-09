@@ -226,6 +226,12 @@ blockquote {
   color: var(--color-black);
   border: 0.25rem solid var(--color-black);
   background-color: var(--color-white);
+  height: 420px;
+  display: flex;
+  background-image: url(../Images/default-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 blockquote p {
@@ -237,19 +243,21 @@ blockquote p {
   text-align: center;
   text-shadow: var(--subheading-text-shadow);
   color: white;
-  line-height: 15px;
-  background-image: url();
+  /* line-height: 15px; */
+  display: flex;
+  align-items: center;
 }
 
 blockquote p strong {
   position: absolute;
   top: -0.25rem;
   left: -0.25rem;
-  padding: 0.25em 1em;
+  /* padding: 0.25em 1em; */
   color: var(--color-white);
   font-size: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   background-color: var(--color-black);
+  padding: 4px;
 }
 
 main h2,
