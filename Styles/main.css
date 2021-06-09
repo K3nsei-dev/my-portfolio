@@ -696,6 +696,11 @@ q{
   background-repeat: no-repeat;
 }
 
+.cards-container-about h2::before,
+.cards-container-about h2::after{
+  content: "-";
+}
+
 /* mobile responsiveness */
 @media screen and (max-width: 1536px) {
   h1 {

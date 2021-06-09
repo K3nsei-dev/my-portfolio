@@ -226,7 +226,7 @@ blockquote {
   color: var(--color-black);
   border: 0.25rem solid var(--color-black);
   background-color: var(--color-white);
-  height: 420px;
+  /* height: 420px; */
   display: flex;
   background-image: url(../Images/default-bg.jpg);
   background-position: center;
